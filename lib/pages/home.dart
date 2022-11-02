@@ -1,5 +1,6 @@
 import 'package:demo_pwa/pages/camera_page.dart';
 import 'package:demo_pwa/pages/counter_page.dart';
+import 'package:demo_pwa/pages/preference_page.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -24,7 +25,12 @@ class _HomePageState extends State<HomePage> {
             const SizedBox(height: 25),
             ElevatedButton(
                 onPressed: () => Navigator.push(context, CameraPage.route()),
-                child: const Text('Goto Camera Page'))
+                child: const Text('Goto Camera Page')),
+            const SizedBox(height: 25),
+            ElevatedButton(
+                onPressed: () =>
+                    Navigator.push(context, PreferencePage.route()),
+                child: const Text('Goto Preference Page')),
           ],
         ),
       ),
